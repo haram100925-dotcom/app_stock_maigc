@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal() // Gradle 플러그인 포털
+        google()             // Google 저장소 (Android Gradle Plugin 포함)
+        mavenCentral()       // Maven Central 저장소
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "STOCK" // 프로젝트 이름 확인
+include ":app"             // 모듈 포함 확인
